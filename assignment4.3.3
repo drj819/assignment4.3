@@ -1,0 +1,17 @@
+Assignment 4.3
+
+head(USArrests)
+States = rownames(USArrests)
+substr(x = states, start = 1, stop = 4)
+abbreviate(states, minlength = 5)
+grep(pattern = "w", x = tolower(states), value = TRUE)
+grep(pattern = "W", x = toupper(states), value = TRUE)
+grep(pattern = "[wW]", x = states, value = TRUE)
+
+
+hist(nchar(states), main = "Histogram",
+     xlab = "number of characters in  US State names")
+
+
+hist(nchar(states), main = "Histogram",
+     xlab = "number of characters in each US State names")
